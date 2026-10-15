@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'OngleipParkDahyeon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+ul,
+li{
+    list-style: none;
+}
+body{
+    background-color: rgb(240, 208, 240);
+}
+/* 공통 영역 */
+.inner{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    background-color: rgb(222, 156, 231);
+
+
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 100%;
+}
+/* 상단 */
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+
+}
+header .inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    font-family: "Roboto Condensed", sans-serif;
+}
+/* nav */
+.nav{
+    width: 25%;
+    display: flex;
+    gap: 3%;
+    justify-content: flex-end
+}
+/* 메뉴 */
+.menu{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+.menu a{
+    text-align: center;
+}
+/* 햄버거 메뉴 */
+.hamburger{
+    display: none;
+}
+
+/* 메인 */
+main{
+    padding: 146px 0;
+}
+/* 소개 영역 */
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.intro-text h2{
+    font-size: 48px;
+    font-family: 'OngleipParkDahyeon';
+    margin-bottom: 30px;
+}
+.intro-text p{
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* 필터 */
+.filter-btn{
+    padding: 8px 14px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.intro-text br{
+    display: none;
+}
+.filter-btn img{
+    width: 30%;
+}
+
+/*리스트*/
+.card-list{
+    padding-top: 10%;
+}
+.card-list ul{
+    display: grid;
+    /* grid-template-columns: repeat(4, minmax(0, 1fr)); */
+    grid-template-columns: repeat(auto-fit , minmax(290px , 1fr));
+    gap: 32px 24px;
+}
+.card-list > ul > li{
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.card-list > ul > li > img{
+    width: 100%;
+    display: block;
+}
+.card-info{
+    padding: 3%;
+    padding-left: 5%;
+}
+
+/* 나라 */
+.country {
+  color: #999;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.country img {
+  width: 24px;
+}
+.card-list h3 {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Inter;
+}
+.price {
+  margin-top: 24px;
+  font-size: 18px;
+  font-family: Inter;
+}
+
+

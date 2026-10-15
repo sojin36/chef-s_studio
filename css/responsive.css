@@ -1,0 +1,63 @@
+/* 1000 */
+@media (max-width:1000px){
+    .card-list ul{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* 768 */
+@media (max-width:768px){
+    header{
+        height: 65px;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        gap: 20px;
+        padding: 20px 0;
+        flex-direction: column;
+        background-color: aquamarine;
+    }
+    .menu.show{
+        display: block;
+    }
+    .hamburger{
+        display: block;
+    }
+    .nav{
+        position: relative;
+    }
+    /* 메인 */
+    .intro{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .intro-text h2{
+        font-size: 32px;
+        
+    }
+    .intro-text p{
+        font-size: 16px;
+    }
+    /* list */
+    .card-list ul{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* 390 */
+@media (max-width: 390px){
+    header{
+        height: 55px;
+    }
+    header h1{
+        font-size: 22px;
+    }
+    .intro-text br{
+        display: block;
+    }
+}
+

@@ -18,10 +18,10 @@
         gap: 20px;
         padding: 20px 0;
         flex-direction: column;
-        background-color: aquamarine;
+        background-color: rgb(242, 173, 252);
     }
     .menu.show{
-        display: block;
+        display: flex;
     }
     .hamburger{
         display: block;
